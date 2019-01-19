@@ -88,24 +88,24 @@ namespace DN_RecursiveCalculatorTestSuite
         }
     }
 
-    public class DivideTestSuite
+    public class NthRootTestSuite
     {
         [Fact]
-        public void TestingDivideMethodOne()
+        public void TestingNthRootMethodOne()
         {
-            Assert.Equal(1, Program.Divide(2, 2));
+            Assert.Equal(2, Program.NthRoot(4, 2));
         }
 
         [Fact]
-        public void TestingDivideMethodTwo()
+        public void TestingNthRootMethodTwo()
         {
-            Assert.Equal(10, Program.Divide(20, 2));
+            Assert.Equal(3, Program.NthRoot(27, 3));
         }
 
         [Fact]
-        public void TestingDivideMethodThree()
+        public void TestingNthRootMethodThree()
         {
-            Assert.Equal(3, Program.Divide(15, 5));
+            Assert.Equal(4, Program.NthRoot(256, 4));
         }
     }
 }

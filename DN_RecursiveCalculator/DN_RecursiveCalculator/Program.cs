@@ -24,7 +24,7 @@ namespace DN_RecursiveCalculator
         /// <param name="a"></param>
         /// <param name="calcType"></param>
         /// <param name="b"></param>
-        static void Calculator(decimal a, CalcType calcType, decimal b )
+        static void Calculator(double a, CalcType calcType, double b )
         {
             
             switch (calcType)
@@ -58,7 +58,7 @@ namespace DN_RecursiveCalculator
         /// <param name="a"></param>
         /// <param name="b"></param>
         /// <returns>integer</returns>
-        public static decimal Add(decimal a, decimal b)
+        public static double Add(double a, double b)
         {
             if (b == 0)
             {
@@ -74,7 +74,7 @@ namespace DN_RecursiveCalculator
         /// <param name="a"></param>
         /// <param name="b"></param>
         /// <returns>integer</returns>
-        public static decimal Subtract(decimal a, decimal b)
+        public static double Subtract(double a, double b)
         {
             if (b == 0)
             {
@@ -90,7 +90,7 @@ namespace DN_RecursiveCalculator
         /// <param name="a"></param>
         /// <param name="b"></param>
         /// <returns>integer</returns>
-        public static decimal Multiply(decimal a, decimal b)
+        public static double Multiply(double a, double b)
         {
             if (b == 0)
             {
@@ -106,11 +106,11 @@ namespace DN_RecursiveCalculator
         /// <param name="a"></param>
         /// <param name="b"></param>
         /// <returns>integer</returns>
-        public static decimal Divide(decimal a, decimal b)
+        public static double Divide(double a, double b)
         {
-            decimal counter = 0;
+            double counter = 0;
 
-            decimal HelperDivide(decimal aHelper, decimal bHelper, decimal counterHelper)
+            double HelperDivide(double aHelper, double bHelper, double counterHelper)
             {
                 if (bHelper == 0)
                 {
@@ -137,22 +137,23 @@ namespace DN_RecursiveCalculator
         /// <param name="a"></param>
         /// <param name="b"></param>
         /// <returns>integer</returns>
-        public static decimal NthRoot(decimal a, decimal b)
+        public static double NthRoot(double a, double b)
         {
-            decimal counter = 0;
-            decimal HelperRoot( decimal aHelper, decimal bHelper, decimal counterHelper)
+            double counter = 0;
+            double HelperRoot( double aHelper, double bHelper, double counterHelper)
             {
-                if(aHelper == 0)
+                if(aHelper < 2)
                 {
                     return counterHelper;
                 }
                 else
                 {
-
-                    return HelperRoot(aHelper - bHelper, bHelper, counterHelper + 1);
+                    counterHelper = counterHelper + 1;
+                    return HelperRoot(aHelper / bHelper, bHelper, counterHelper);
                 }
             }
             counter = HelperRoot(a, b, counter);
+            
             return counter;
         }
 
@@ -162,10 +163,10 @@ namespace DN_RecursiveCalculator
         /// <param name="a"></param>
         /// <param name="b"></param>
         /// <returns>integer</returns>
-        public static decimal Exponent(decimal a, decimal b )
+        public static double Exponent(double a, double b )
         {
             b = b - 1;
-            decimal HelperExponent(decimal aHelper, decimal bHelper)
+            double HelperExponent(double aHelper, double bHelper)
             {
                 if (bHelper == 0)
                 {
