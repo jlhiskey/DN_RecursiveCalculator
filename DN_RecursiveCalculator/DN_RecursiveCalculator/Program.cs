@@ -168,7 +168,7 @@ namespace DN_RecursiveCalculator
             b = b - 1;
             double HelperExponent(double aHelper, double bHelper)
             {
-                if (bHelper == 0)
+                if (bHelper < 1)
                 {
                     return aHelper;
                 }

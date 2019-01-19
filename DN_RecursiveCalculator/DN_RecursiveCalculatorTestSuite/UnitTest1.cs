@@ -108,4 +108,25 @@ namespace DN_RecursiveCalculatorTestSuite
             Assert.Equal(4, Program.NthRoot(256, 4));
         }
     }
+
+    public class ExponentTestSuite
+    {
+        [Fact]
+        public void TestingExponentMethodOne()
+        {
+            Assert.Equal(4, Program.Exponent(2, 2));
+        }
+
+        [Fact]
+        public void TestingExponentMethodTwo()
+        {
+            Assert.Equal(27, Program.Exponent(3, 3));
+        }
+
+        [Fact]
+        public void TestingExponentMethodThree()
+        {
+            Assert.Equal(256, Program.Exponent(4, 4));
+        }
+    }
 }
