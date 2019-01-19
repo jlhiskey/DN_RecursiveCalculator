@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DN_RecursiveCalculator", "DN_RecursiveCalculator\DN_RecursiveCalculator.csproj", "{DA546B23-BC3A-4888-B187-5C88B285E011}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DN_RecursiveCalculatorTestSuite", "DN_RecursiveCalculatorTestSuite\DN_RecursiveCalculatorTestSuite.csproj", "{2DED4539-BFDF-484B-99F1-9F3DD7F8B15C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA546B23-BC3A-4888-B187-5C88B285E011}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA546B23-BC3A-4888-B187-5C88B285E011}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA546B23-BC3A-4888-B187-5C88B285E011}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA546B23-BC3A-4888-B187-5C88B285E011}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DED4539-BFDF-484B-99F1-9F3DD7F8B15C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DED4539-BFDF-484B-99F1-9F3DD7F8B15C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DED4539-BFDF-484B-99F1-9F3DD7F8B15C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DED4539-BFDF-484B-99F1-9F3DD7F8B15C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0ABCC61-687D-40A2-AE74-3CDB4F5FAC3E}
+	EndGlobalSection
+EndGlobal
