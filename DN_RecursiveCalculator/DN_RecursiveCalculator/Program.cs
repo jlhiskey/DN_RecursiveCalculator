@@ -13,8 +13,8 @@ namespace DN_RecursiveCalculator
             Calculator(4, CalcType.subtract, 2);
             Calculator(4, CalcType.multiply, 2);
             Calculator(2, CalcType.divide, 2);
-            Calculator(4, CalcType.useRoot, 2);
-            Calculator(4, CalcType.useExponent, 2);
+            Calculator(3, CalcType.useRoot, 3);
+            Calculator(3, CalcType.useExponent, 3);
             Console.ReadLine();
         }
 
@@ -174,7 +174,7 @@ namespace DN_RecursiveCalculator
                 }
                 else
                 {
-                    return HelperExponent(aHelper * aHelper, bHelper - 1);
+                    return HelperExponent(aHelper * a, bHelper - 1);
                 }
             }
               a = HelperExponent(a, b);
